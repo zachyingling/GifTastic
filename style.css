@@ -1,0 +1,39 @@
+body {
+  margin: 0px;
+}
+
+.buttons {
+  width: 100%;
+}
+
+.adding-buttons {
+  float: right;
+  clear: both;
+  display: inline;
+}
+
+#input-box {
+  margin-bottom: 8px;
+}
+
+.header {
+  margin: 0px;
+}
+
+.button {
+  border-radius: 10px;
+  color: white;
+  font-weight: bolder;
+  background-color: teal;
+  padding: 5px 10px 5px 10px;
+  border: none;
+}
+
+.button:hover {
+  background-color: turquoise;
+  color: black;
+}
+
+.buttons input {
+  margin: 5px;
+}
