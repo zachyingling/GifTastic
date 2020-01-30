@@ -2,25 +2,37 @@ body {
   margin: 0px;
 }
 
+.clear {
+  clear: both;
+}
+
 .buttons {
-  width: 100%;
+  max-width: 80%;
+}
+
+.gifs {
+  position: relative;
+  top: 50px;
 }
 
 .adding-buttons {
-  float: right;
-  clear: both;
-  display: inline;
+  width: 20%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
 
 #input-box {
   margin-bottom: 8px;
+  width: 80%;
 }
 
 .header {
   margin: 0px;
 }
 
-.button {
+.button,
+#submit-button {
   border-radius: 10px;
   color: white;
   font-weight: bolder;
@@ -29,11 +41,19 @@ body {
   border: none;
 }
 
-.button:hover {
+.button:hover,
+#submit-button:hover {
   background-color: turquoise;
   color: black;
 }
 
 .buttons input {
   margin: 5px;
+}
+
+.gif-box {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  /* float: left; */
 }
