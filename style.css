@@ -64,7 +64,6 @@ body {
 #gifContainer {
   margin-top: 20px;
   margin-bottom: 20px;
-  padding-top: 70px;
   border: 2px solid black;
   overflow: hidden !important;
 }

@@ -64,6 +64,9 @@ $(document).ready(function() {
       }
       let clearDiv = $("<div class='clear'>")
       $(".gifs").append(clearDiv);
+      if($("#gifContainer").height() > 120){
+        $("#gifContainer").css("padding-bottom", "70px");
+      }
     });
   });
 
