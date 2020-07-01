@@ -2,7 +2,7 @@
 
 # Description
 
-This application displays different gifs from the Giphy API. The different gifs are displayed through different keywords. You are also able to add different keywords to pull from giphy's API.
+This application displays different gifs from the Giphy API. The different gifs are displayed through different words that you enter yourself.
 
 ### Link
 https://zachyingling.github.io/GifTastic/
