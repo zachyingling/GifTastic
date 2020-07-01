@@ -13,6 +13,8 @@ body {
 .gifs {
   position: relative;
   top: 50px;
+  height: auto;
+  display: table-row;
 }
 
 .adding-buttons {
@@ -56,5 +58,23 @@ body {
   display: inline-block;
   margin-left: 10px;
   margin-right: 10px;
-  /* float: left; */
+  overflow: hidden;
+}
+
+#gifContainer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 70px;
+  border: 2px solid black;
+  overflow: hidden !important;
+}
+
+.gifHeader {
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+hr {
+  border-top: 1px solid rgb(0, 0, 1);
 }

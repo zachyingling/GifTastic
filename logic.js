@@ -4,11 +4,11 @@ $(document).ready(function() {
   let animals = [
     "dog",
     "cat",
-    "rabbit",
-    "hamster",
-    "goldfish",
-    "bird",
-    "turtle",
+    "kitchen",
+    "donald trump",
+    "coronavirus",
+    "video games",
+    "computers",
     "penguin"
   ];
   updateButtons();
@@ -62,6 +62,8 @@ $(document).ready(function() {
         );
         $(".gifs").append(newDiv);
       }
+      let clearDiv = $("<div class='clear'>")
+      $(".gifs").append(clearDiv);
     });
   });
 
