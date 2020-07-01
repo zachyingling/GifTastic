@@ -4,7 +4,7 @@ $(document).ready(function() {
   let animals = [
     "dog",
     "cat",
-    "kitchen",
+    "cooking",
     "donald trump",
     "coronavirus",
     "video games",

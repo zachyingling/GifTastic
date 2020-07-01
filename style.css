@@ -66,6 +66,7 @@ body {
   margin-bottom: 20px;
   border: 2px solid black;
   overflow: hidden !important;
+  background-color: white;
 }
 
 .gifHeader {
@@ -73,7 +74,10 @@ body {
   font-style: italic;
 }
 
-
 hr {
   border-top: 1px solid rgb(0, 0, 1);
+}
+
+body {
+  background-color: #008080;
 }
