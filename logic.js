@@ -22,7 +22,8 @@ $(document).ready(function() {
     }
   }
 
-  $("#submit-button").on("click", function() {
+  $("#submit-button").on("click", function(e) {
+    e.preventDefault();
     if ($("#input-box").val() === "") {
       return;
     } else {
