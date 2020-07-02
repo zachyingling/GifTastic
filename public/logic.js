@@ -24,8 +24,8 @@ $(document).ready(function() {
 
   $("#submit-button").on("click", function(e) {
     e.preventDefault();
-    if ($("#input-box").val() === "") {
-      return;
+    if ($("#input-box").val() === "" || animals.includes($("#input-box").val())) {
+      return false;
     } else {
       let inputValue = $("#input-box").val();
       animals.push(inputValue);
