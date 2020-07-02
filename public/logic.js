@@ -70,6 +70,7 @@ $(document).ready(function() {
     });
   });
 
+  // to pause gif image on click via data-states
   $(document).on("click", ".gif-image", function() {
     if ($(this).attr("data-state") === "animate") {
       $(this).attr("data-state", "still");
