@@ -30,6 +30,7 @@ $(document).ready(function() {
       let inputValue = $("#input-box").val();
       animals.push(inputValue);
       updateButtons();
+      gifSearch(inputValue);
     }
   });
 
