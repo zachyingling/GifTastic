@@ -35,11 +35,8 @@ $(document).ready(function() {
 
   // Code to get the data in the button value to go to the giphy api and display the different gifs using the button's value
   $(document).on("click", ".button", function() {
-    let queryURL =
-      "https://api.giphy.com/v1/gifs/search?api_key=bMiBd76ARCGzlX5jLEc5f9DceyPBVcTK&q=";
     let searchParameter = $(this).val();
-    let finalURL = queryURL + searchParameter;
-    gifSearch(searchParameter, finalURL);
+    gifSearch(searchParameter);
   });
 
   // to pause gif image on click via data-states
@@ -53,9 +50,9 @@ $(document).ready(function() {
     }
   });
 
-  function gifSearch (searchParameter, finalURL) {
+  function gifSearch (searchParameter) {
     $.ajax({
-      url: finalURL,
+      url: "/api/gifs/" + searchParameter,
       method: "GET"
     }).then(function(response) {
       console.log(response);
