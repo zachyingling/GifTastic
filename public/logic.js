@@ -39,7 +39,21 @@ $(document).ready(function() {
       "https://api.giphy.com/v1/gifs/search?api_key=bMiBd76ARCGzlX5jLEc5f9DceyPBVcTK&q=";
     let searchParameter = $(this).val();
     let finalURL = queryURL + searchParameter;
+    gifSearch(searchParameter, finalURL);
+  });
 
+  // to pause gif image on click via data-states
+  $(document).on("click", ".gif-image", function() {
+    if ($(this).attr("data-state") === "animate") {
+      $(this).attr("data-state", "still");
+      $(this).attr("src", $(this).attr("data-still"));
+    } else {
+      $(this).attr("data-state", "animate");
+      $(this).attr("src", $(this).attr("data-animate"));
+    }
+  });
+
+  function gifSearch (searchParameter, finalURL) {
     $.ajax({
       url: finalURL,
       method: "GET"
@@ -68,16 +82,5 @@ $(document).ready(function() {
         $("#gifContainer").css("padding-bottom", "70px");
       }
     });
-  });
-
-  // to pause gif image on click via data-states
-  $(document).on("click", ".gif-image", function() {
-    if ($(this).attr("data-state") === "animate") {
-      $(this).attr("data-state", "still");
-      $(this).attr("src", $(this).attr("data-still"));
-    } else {
-      $(this).attr("data-state", "animate");
-      $(this).attr("src", $(this).attr("data-animate"));
-    }
-  });
+  }
 });
